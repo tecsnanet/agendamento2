@@ -1,0 +1,36 @@
+
+<table border="1">
+    <tr>
+        <td>CPF</td>
+        <td>NOME</td>
+        <td>SOBRENOME</td> 
+        <td>DATA</td>
+        <td>EMAIL</td>
+        <td>TELEFONE</td>
+        <td>NUMEROCASA</td>
+        <td>RUA</td>
+        <td>CEP</td>
+        <td>SEXO</td>
+        <td>FOTO</td>
+        <td>EXCLUIR</td>  
+        <td>EDITAR</td>    
+    </tr>    
+{{#each usuarios}}
+     <tr>
+        <td>{{cpf}}</td>
+        <td>{{nome}}</td> 
+        <td>{{sobrenome}}</td>
+        <td>{{data}}</td>
+        <td>{{email}}</td>
+        <td>{{telefone}}</td>
+        <td>{{numeroCasa}}</td>
+        <td>{{rua}}</td>
+        <td>{{cep}}</td>
+        <td>{{sexo}}</td>
+        <td>{{foto}}</td>
+        <td><a href="/excluir/{{cpf}}"> <button> excluir</button></a> </td>   
+        <td><a href="/editar/{{cpf}}"> <button> EDITAR</button></a></td>  
+          
+    </tr>
+{{/each}}   
+</table>

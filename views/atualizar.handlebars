@@ -1,0 +1,21 @@
+{{!-- <form method="post" action="/editar"> --}}
+    {{!-- CPF: <input type="text" name="cpf" value="{{dados.cpf}}">
+    Nome: <input type="text" name="nome" value="{{dados.nome}}">
+    <input type="submit" value="Editar"> --}}
+     <link rel='stylesheet' type='text/css' media='screen' href='/public/css/style.css'>
+    <h1>Cadastro</h1>
+    <form method="post" action="/editar/{{user.cpf}}">
+        CPF:<input type="text" name="cpf" id="cpf" value="{{user.cpf}}"><br>
+        NOME: <input type="text" name="nome" id="nome" value="{{user.nome}}"><br>
+        SOBRENOME<input type="text" name="sobrenome" value="{{user.sobrenome}}"><br>
+        DATA<input type="text" name="data" value="{{user.data}}"><br>
+        EMAIL<input type="email" name="email" value="{{user.email}}"><br>
+        TELEFONE<input type="text" name="telefone" value="{{user.telefone}}"><br>
+        NUMEROCASA<input type="text" name="numeroCasa" value="{{user.numeroCasa}}"><br>
+        RUA<input type="text" name="rua"  value="{{user.rua}}"><br>
+        CEP<input type="text" name="cep"  value="{{user.cep}}"><br>
+        SEXO<input type="text" name="sexo"  value="{{user.sexo}}"><br>
+        FOTO<input type="text" name="foto"  value="{{user.foto}}"><br>
+        <input type="submit" value="Cadastrar">
+    </form>
+</form>

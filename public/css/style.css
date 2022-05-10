@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(235, 191, 191);
+}
+h1{
+    font-size: 25;
+    text-align: center;
+}
+#men{
+    background-color: rosybrown;
+    display: inline;
+}
+#men,a{
+    font-size: 30px;
+}
